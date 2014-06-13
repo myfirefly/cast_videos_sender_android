@@ -121,24 +121,24 @@ public class CastPreference extends PreferenceActivity
     public static String getReceiverAddress(Context context) {
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(context);
         String address = sharedPref.getString(RECEIVER_ADDRESS_KEY, "");
-        return (address.length() > 0) ? address : "http://castapp.infthink.com/receiver/mediaplayer/index.html";
+        return (address.length() > 0) ? address : "http://myfirefly.s3.amazonaws.com/cast/receiver/mediaplayer/index.html";
     }
 
     public static void setReceiverAddress(Context context, String address) {
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(context);
         sharedPref.edit().putString(RECEIVER_ADDRESS_KEY, 
-        		(address.length() > 0) ? address : "http://castapp.infthink.com/receiver/mediaplayer/index.html").commit();
+                       (address.length() > 0) ? address : "http://myfirefly.s3.amazonaws.com/cast/receiver/mediaplayer/index.html").commit();
     }
 
     public static String getServerAddress(Context context) {
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(context);
         String address = sharedPref.getString(SERVER_ADDRESS_KEY, "");
-        return (address.length() > 0) ? address : "http://castapp.infthink.com/droidream/samples/";
+        return (address.length() > 0) ? address : "http://myfirefly.s3.amazonaws.com/cast/droidream/samples/";
     }
     
     public static void setServerAddress(Context context, String address) {
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(context);
-        sharedPref.edit().putString(SERVER_ADDRESS_KEY, (address.length() > 0) ? address : "http://castapp.infthink.com/droidream/samples/").commit();
+        sharedPref.edit().putString(SERVER_ADDRESS_KEY, (address.length() > 0) ? address : "http://myfirefly.s3.amazonaws.com/cast/droidream/samples/").commit();
     }
 
     public static boolean isFtuShown(Context ctx) {

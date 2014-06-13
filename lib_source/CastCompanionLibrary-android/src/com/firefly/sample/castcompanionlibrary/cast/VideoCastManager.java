@@ -1995,7 +1995,7 @@ public class VideoCastManager extends BaseCastManager
 
     @Override
     public void onFailed(int resourceId, int statusCode) {
-        LOGD(TAG, "onFailed: " + mContext.getString(resourceId) + ", code: " + statusCode);
+        LOGD(TAG, "onFailed: code: " + statusCode);
         super.onFailed(resourceId, statusCode);
     }
 

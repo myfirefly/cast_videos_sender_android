@@ -23,16 +23,16 @@
     <PreferenceCategory android:title="ADDRESS SETTINGS">
         <EditTextPreference
             android:title="Receiver Address"
-            android:summary="http://castapp.infthink.com/receiver/mediaplayer/index.html"
+            android:summary="http://myfirefly.s3.amazonaws.com/cast/receiver/mediaplayer/index.html"
             android:key="receiver_address"
-            android:defaultValue="http://castapp.infthink.com/receiver/mediaplayer/index.html"
+            android:defaultValue="http://myfirefly.s3.amazonaws.com/cast/receiver/mediaplayer/index.html"
             android:dialogTitle="Receiver Address">
         </EditTextPreference>
         <EditTextPreference
             android:title="Server Address"
-            android:summary="http://castapp.infthink.com/droidream/samples/"
+            android:summary="http://myfirefly.s3.amazonaws.com/cast/droidream/samples/"
             android:key="server_address"
-            android:defaultValue="http://castapp.infthink.com/droidream/samples/"
+            android:defaultValue="http://myfirefly.s3.amazonaws.com/cast/droidream/samples/"
             android:dialogTitle="Server Address">
         </EditTextPreference>
     </PreferenceCategory>
